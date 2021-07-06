@@ -1,0 +1,5 @@
+Here are some tips:
+1. The program should take as an input one of the modes - encode, send, decode.
+2. You don't need to output anything in console (but you can)
+3. On each step, you need to write bytes to the corresponding files e.g. outputStream.write((byte) Integer.parseInt(str, 2)), where str is binary representation of byte.
+4. Remember that you always need to convert bytes you read from file to the two's complement 8-bit numbers

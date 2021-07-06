@@ -343,6 +343,56 @@ files:
     }
 
   learner_created: false
+- name: decoded.txt
+  visible: true
+  text: 5548172 6548 225147 23656595 5155
+  learner_created: true
+- name: encoded.txt
+  visible: true
+  text: "\x0f�3<3���\x0f�\0<\0���\x0f��3\0\0��\x0f�3<3\0�\0\x0f\0\0<\x0f\0�3\x0f�\
+    3<\0���\x0f��3\0\0�3\x0f��<<\0��\x0f��<3��\x0f\x0f�33\0\0��\x0f�3<3���"
+  learner_created: true
+- name: src/correcter/UserActionTemplate.java
+  visible: true
+  text: |
+    package correcter;
+
+    import java.io.File;
+    import java.io.IOException;
+
+    public class UserActionTemplate {
+        public void encode(String input, String output) {
+            File inputFile = new File(input);
+            File outputFile = new File(output);
+
+            try {
+                byte[] bytes = bytesFile.readBytesFromFile(inputFile);
+                byte[] data = encDec.encode(bytes);
+                bytesFile.writeBytesToFile(data, outputFile);
+            } catch (IOException e) {
+                System.out.println(e);
+            }
+        }
+    }
+  learner_created: true
+- name: received.txt
+  visible: true
+  text: "O�28#��C\x1f��| ���\n��1@\x01��\x0e�2|\x13 �\b\n\b@=\a@�1Oȳ,\b���/��7\b\x01\
+    �s���8 ����,7���\v�\x13s\x04@��\n�#,2�p�"
+  learner_created: true
+- name: src/correcter/Encoding.java
+  visible: true
+  learner_created: true
+- name: src/correcter/Decoding.java
+  visible: true
+  learner_created: true
+- name: src/correcter/Sending.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/58/stages/316/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">JetBrains
+    Academy</a> to continue learning.
+  time: Tue, 06 Jul 2021 18:32:11 UTC
 record: -1

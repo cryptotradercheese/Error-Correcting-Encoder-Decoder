@@ -136,6 +136,15 @@ files:
         }
     }
   learner_created: false
+- name: src/correcter/PoorInternetConnection.java
+  visible: true
+  learner_created: true
+- name: src/correcter/EncoderDecoder.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/58/stages/313/implement#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 30 Jun 2021 10:35:31 UTC
+record: 2

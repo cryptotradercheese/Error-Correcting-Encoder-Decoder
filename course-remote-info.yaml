@@ -3,23 +3,23 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/210079/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Tue, 29 Jun 2021 17:26:35 UTC
+update_date: Tue, 06 Jul 2021 17:28:50 UTC
 stages:
 - id: 312
   step: 5454
   is_completed: true
 - id: 313
   step: 5455
-  is_completed: false
+  is_completed: true
 - id: 314
   step: 5456
-  is_completed: false
+  is_completed: true
 - id: 315
   step: 5457
-  is_completed: false
+  is_completed: true
 - id: 316
   step: 5458
-  is_completed: false
+  is_completed: true
 topics:
   0:
   - title: JVM, JRE, and JDK
@@ -62,6 +62,62 @@ topics:
     theory_id: 3512
   - title: Increment and decrement
     theory_id: 5008
+  - title: Characters
+    theory_id: 3514
+  - title: Conditional statement
+    theory_id: 3503
+  - title: Ternary operator
+    theory_id: 3506
+  - title: The for-loop
+    theory_id: 3505
+  - title: The while and do-while loops
+    theory_id: 3498
+  - title: Branching statements
+    theory_id: 3507
+  - title: Switch statement
+    theory_id: 3504
+  - title: Write, compile, and run
+    theory_id: 3739
+  - title: Sizes and ranges
+    theory_id: 3532
+  - title: Type casting
+    theory_id: 3510
+  - title: Calling a method
+    theory_id: 10973
+  - title: Declaring a method
+    theory_id: 10982
+  - title: The main method
+    theory_id: 3489
+  - title: Functional decomposition
+    theory_id: 10570
+  - title: Primitive and reference types
+    theory_id: 5035
+  - title: Array
+    theory_id: 3511
+  - title: Iterating over arrays
+    theory_id: 3602
+  - title: Arrays as parameters
+    theory_id: 3594
+  - title: String
+    theory_id: 3523
+  - title: IntelliJ IDEA
+    theory_id: 3801
+  - title: Command line overview
+    theory_id: 8977
+  - title: Parameters and options
+    theory_id: 9746
+  - title: Running programs on your computer
+    theory_id: 3746
+  - title: Random
+    theory_id: 4910
+  - title: Defining classes
+    theory_id: 3618
+  - title: Constructor
+    theory_id: 3535
+  - title: Instance methods
+    theory_id: 3495
+  - title: Objects
+    theory_id: 4727
   1:
   - title: Errors in programs
     theory_id: 3536

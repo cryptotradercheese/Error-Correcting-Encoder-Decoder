@@ -163,6 +163,71 @@ files:
         }
     }
   learner_created: false
+- name: src/correcter/EncoderDecoder.java
+  visible: true
+  text: |-
+    package correcter;
+
+    public class EncoderDecoder {
+        String encode(String text) {
+            StringBuilder encodedText = new StringBuilder();
+            for (int i = 0; i < text.length(); i++) {
+                for (int j = 0; j < 3; j++) {
+                    encodedText.append(text.charAt(i));
+                }
+            }
+
+            return encodedText.toString();
+        }
+
+        String decode(String text) {
+            StringBuilder decodedText = new StringBuilder();
+            for (int i = 0; i < text.length(); i += 3) {
+                if (text.charAt(i) == text.charAt(i + 1) || text.charAt(i) == text.charAt(i + 2)) {
+                    decodedText.append(text.charAt(i));
+                } else if (text.charAt(i + 1) == text.charAt(i + 2)) {
+                    decodedText.append(text.charAt(i + 1));
+                }
+            }
+
+            return decodedText.toString();
+        }
+    }
+  learner_created: true
+- name: src/correcter/PoorInternetConnection.java
+  visible: true
+  text: |-
+    package correcter;
+
+    import java.util.Random;
+
+    public class PoorInternetConnection {
+        private final Random random = new Random();
+
+        String emulateErrors(String text) {
+            StringBuilder textWithErrors = new StringBuilder(text);
+
+            for (int start = 0, end = 2; end < text.length(); start += 3, end += 3) {
+                int errorIndex = random.nextInt(end - start + 1) + start;
+    //            char errorChar = (char) (random.nextInt(122 - 97 + 1) + 97);
+                char errorChar = (char) (random.nextInt(63 - 33 + 1) + 33);
+
+                textWithErrors.setCharAt(errorIndex, errorChar);
+            }
+
+            return textWithErrors.toString();
+        }
+    }
+  learner_created: true
+- name: src/correcter/BytesFile.java
+  visible: true
+  learner_created: true
+- name: received.txt
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/58/stages/314/implement#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 04 Jul 2021 05:08:30 UTC
+record: 3

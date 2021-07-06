@@ -1,2 +1,18 @@
+correcter/innerlogic/BytesFile.java
+ correcter.innerlogic.BytesFile
+correcter/Decoding.java
+ correcter.Decoding
+correcter/innerlogic/EncoderDecoder.java
+ correcter.innerlogic.EncoderDecoder
+correcter/Sending.java
+ correcter.Sending
+correcter/innerlogic/PoorInternetConnection.java
+ correcter.innerlogic.PoorInternetConnection
+correcter/Encoding.java
+ correcter.Encoding
 correcter/Main.java
  correcter.Main
+correcter/UserActionTemplate.java
+ correcter.UserActionTemplate
+correcter/innerlogic/BitOperations.java
+ correcter.innerlogic.BitOperations
